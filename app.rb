@@ -1,15 +1,15 @@
 require "sinatra"
 
-get "/" do
+get "/home" do
     "
     <head>
-        <title>Pamela's Bakery</title>
+        <title>Friendly Bakery</title>
         <link rel='stylesheet' type='text/css' href='style.css'/>
     </head>
     <body>
         <header>
             <div class='top-banner'></div>
-            <h1>Pamela's Bakery</h1>
+            <h1>Friendly Bakery</h1>
             <nav>
                 <li><a href='#'>Home</a></li>
                 <li><a href='#'>Shop</a></li>
