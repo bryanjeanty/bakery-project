@@ -189,15 +189,15 @@
 /* -------------------------------------------- */
 
 .test-sect {
-    background: url(images/abundance-baked-bakery-205961.jpg) center center no-repeat;
+    background: url(images/abundance-baked-bakery-205961.jpg) center center no-repeat fixed;
     background-size: cover;
-    height: 100vh;
+    height: 65vh;
     overflow: hidden;
 }
 
 .test-overlay {
-    background-color: rgba(249, 220, 92, 0.35);
-    height: 100vh;
+    background-color: rgba(44, 39, 16, 0.55);
+    height: 65vh;
 }
 
 .test-title-container {
@@ -218,9 +218,40 @@
 
 .test-title {
     font-size: 2em;
-    width: 300%;
+    width: 700px;
     display: inline-block;
     margin: 10px 0;
     padding-top: 10px;
     color: #EDE3E9;
+}
+
+.test-image-container {
+    display: flex;
+}
+
+.test-image img {
+    object-fit: cover;
+    object-position: 35% 0; 
+    width: 240px;
+    height: 225px;
+    border-radius: 50%;
+    margin-left: 250px;
+    margin-top: 50px;
+    border: 2px solid #EDE3E9;
+}
+
+.test-image-text {
+    width: 30%;
+    margin-right: 175px;
+    margin-left: auto;
+    margin-top: 50px;
+    padding: 40px;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-style: italic;
+    text-align: justify;
+    color: #EDE3E9;
+    /* background-color: #5E55C7; */
+    border: 1px solid #EDE3E9; /*black;*/
+    border-radius: 10px;
 }
