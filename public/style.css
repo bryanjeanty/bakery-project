@@ -95,3 +95,27 @@
     padding: 10px;
     border-radius: 2px;
 }
+
+.hero h1 {
+    color: #EDE3E9;
+    text-align: center;
+    margin-top: 400px;
+    font-size: 4em;
+    font-style: italic;
+}
+
+.hero .down-arrow {
+    object-fit: cover;
+    border: 1.5px solid #5E55C7;
+    height: 25px;
+    width: 40px;
+    margin-left: 590px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.hero .down-arrow:hover {
+    cursor: pointer;
+    border: none;
+    background-color: #EDE3E9;
+}
