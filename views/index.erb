@@ -6,23 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Friendly Bakery</title>
     <%# Bootstrap Link %>
-    <%# Personal CSS Link %>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="top-banner">
-            <a href="#">
-                <img src="images/phone-call.svg" alt="phone icon" width="15px">
-                (631)123-4567
-            </a>
-            <a href="#">
-                <img src="images/envelope.svg" alt="mail icon" width="15px">
-                friendly.admin@bakery.com
-            </a>
-            <form action="/" method="post">
-                <input type="text" name="search" placeholder="Enter item...">
-                <input type="image" src="images/magnifying-glass.svg" alt="magnifying glass icon" width="15px">
-            </form>
+
+            <div class="top-contacts">
+                <a href="#">
+                    <img src="images/call.svg" alt="phone icon" width="15px">
+                    (631)123-4567
+                </a>
+
+                <a href="#">
+                    <img src="images/envelope.svg" alt="mail icon" width="15px">
+                    friendly.admin@bakery.com
+                </a>
+            </div>
+
+            <div class="top-search">
+                <form action="/" method="post">
+                    <input id="input-1" type="text" name="search" placeholder="Enter item...">
+                    <input type="image" src="images/magnifying-glass.svg" alt="magnifying glass icon" width="15px">
+                </form>
+            </div>
+
         </div>
     </header>
 
