@@ -56,7 +56,7 @@
 .hero {
     width: 100%;
     height: 94vh; 
-    background: url(images/drew-coffman-1872-unsplash.jpg) center center no-repeat fixed;
+    background: url(images/drew-coffman-1872-unsplash.jpg) center center no-repeat;
     background-size: cover;
     display: inline-block;
     /* position: absolute;
@@ -127,13 +127,15 @@
     /* position: absolute; */
     background-color: #EDE3E9;
     height: 100vh;
-    display: flex;
+    /* display: flex; */
 }
 
 .about-title-container {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    padding-top: 20px;
+    width: 30%;
     display: flex;
 }
 
@@ -148,9 +150,41 @@
 .about-title {
     /* border: 1px solid black; */
     /* height: 50px; */
-    width: 60%;
+    width: 70%;
     display: inline-block;
     margin: 10px 0;
     padding-top: 10px;
     color: #5E55C7;
+}
+
+.about-content {
+    /* border: 1px solid black; */
+    height: 65%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    display: flex;
+}
+
+.about-text, .about-image {
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 100%;
+}
+
+.about-text {
+    background-color: #403F4C;
+    color: #EDE3E9;
+}
+
+.about-text p {
+    font-size: 1.35em;
+    margin: 60px;
+}
+
+.about-image {
+    background: url(images/beautiful-cute-eyes-1766938.jpg) center center no-repeat;
+    background-size: cover;
+    background-position: 10% 0;
 }
