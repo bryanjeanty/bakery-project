@@ -348,13 +348,27 @@
     height: 69%;
 }
 
+.prod-price {
+    border-radius: 50%;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border: 2.25px solid #5E55C7;
+    position: absolute;
+    margin-left: 95px;
+    margin-top: 244px;
+    color: #5E55C7;
+    font-weight: bold;
+    font-size: 1.15em;
+    padding: 13px 18px 13px 8px;
+}
+
 .prod-image img {
     width: 100%;
     height: 100%;
 }
 
 .prod-descript {
-    /* border: 1px solid black; */
     width: 100%;
     height: 30%;
     margin-bottom: 0;
@@ -363,9 +377,8 @@
     color: #5E55C7;
     text-align: center;
     border-top: 2.25px dashed #5E55C7;
-    /* padding: 10px; */
 }
 
 .prod-descript h3 {
-    margin: 15px 10px;
+    margin: 18px 10px 0 10px;
 }
