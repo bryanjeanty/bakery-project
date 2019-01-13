@@ -386,7 +386,6 @@
 /* -------------------------------------------- */
 
 .news-sect {
-    /* height: 15vh; */
     background-color: #5E55C7;
     display: flex;
     padding: 20px;
@@ -422,4 +421,72 @@
     font-size: 1.05em;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+/* -------------------------------------------- */
+
+footer {
+    height: 75vh;
+    background: url(images/bakery-baking-bread-357628.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+footer .secondary {
+    height: 70vh;
+    background-color: rgba(15, 15, 12, 0.45);
+    display: flex;
+}
+
+footer .secondary .footer-container {
+    /* border: 1px solid black; */
+    height: 75%;
+    width: 85%;
+    margin: auto;
+    display: flex;
+}
+
+footer .secondary .footer-contents {
+    /* border: 1px solid black; */
+    width: 25%;
+    height: 100%;
+    margin: auto;
+    color: #EDE3E9;
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
+.footer-contents h3 {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #EDE3E9;
+    text-align: center;
+}
+
+.footer-contents ul li {
+    margin: 18px 0 0 25px;
+    list-style: none;
+    text-align: justify;
+}
+
+.footer-contents ul li a {
+    text-decoration: none;
+    color: #EDE3E9;
+    padding: 10px;
+}
+
+.footer-contents ul li a:hover {
+    background-color: rgba(15, 15, 12, 0.65);
+    color: white;
+}
+
+footer .primary {
+    height: 5vh;
+    background-color: rgba(15, 15, 12, 0.65);
+}
+
+footer .primary p {
+    text-align: center;
+    color: #EDE3E9;
+    font-weight: bold;
+    font-size: 1.05em;
+    padding-top: 10px;
 }
