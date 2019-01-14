@@ -24,52 +24,55 @@ end
 post "/newsletter" do
     @news_email = params.fetch('news-email')
 
-    from = SendGrid::Email.new(email: 'friendly.admin@bakery.com')
-    to = SendGrid::Email.new(email: @news_email)
-    subject = "Friendly Bakery Catalogue"
-    content = SendGrid::Content.new(type: 'text/html', 
-        value: "
-        <body>
-            <h1>Friendly Bakery Catalogue</h1>
-            <br>
-            <h2>Cupcakes</h2>
-            <ul>
-                <li><strong>Baked Butter Cupcake: </strong>$25</li>
-                <li><strong>Baked Berry Cupcake: </strong>$25</li>
-                <li><strong>Baked Fruit Cupcake: </strong>$25</li>
-                <li><strong>Baked Butter Cupcake: </strong>$25</li>
-            </ul>
-            <br>
-            <h2>Bread</h2>
-            <ul>
-                <li><strong>Regular Bread: </strong>$25</li>
-                <li><strong>Regular Bread: </strong>$25</li>
-                <li><strong>Regular Bread: </strong>$25</li>
-                <li><strong>Regular Bread: </strong>$25</li>
-            </ul>
-            <br>
-            <h2>Macaroon</h2>
-            <ul>
-                <li><strong>Colored Macaroons: </strong>$25</li>
-                <li><strong>Colored Macaroons: </strong>$25</li>
-                <li><strong>Colored Macaroons: </strong>$25</li>
-                <li><strong>Colored Macaroons: </strong>$25</li>
-            </ul>
-            <br>
-            <h2>Cakes</h2>
-            <ul>
-                <li><strong>Awesome Cake: </strong>$25</li>
-                <li><strong>Awesome Cake: </strong>$25</li>
-                <li><strong>Awesome Cake: </strong>$25</li>
-                <li><strong>Awesome Cake: </strong>$25</li>
-            </ul>
-        </body>
-        ")
-    mail = SendGrid::Mail.new(from, subject, to, content)
-    
-    sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'].to_s)
-    response = sg.client.mail._('send').post(request_body: mail.to_json)
-    puts response.status_code
-
-    erb(:index)
+    if(@news_email.length == 0)
+        erb(:failed)
+    else
+        from = SendGrid::Email.new(email: 'friendly.admin@bakery.com')
+        to = SendGrid::Email.new(email: @news_email)
+        subject = "Friendly Bakery Catalogue"
+        content = SendGrid::Content.new(type: 'text/html', 
+            value: "
+            <body>
+                <h1>Friendly Bakery Catalogue</h1>
+                <br>
+                <h2>Cupcakes</h2>
+                <ul>
+                    <li><strong>Baked Butter Cupcake: </strong>$25</li>
+                    <li><strong>Baked Berry Cupcake: </strong>$25</li>
+                    <li><strong>Baked Fruit Cupcake: </strong>$25</li>
+                    <li><strong>Baked Butter Cupcake: </strong>$25</li>
+                </ul>
+                <br>
+                <h2>Bread</h2>
+                <ul>
+                    <li><strong>Regular Bread: </strong>$25</li>
+                    <li><strong>Regular Bread: </strong>$25</li>
+                    <li><strong>Regular Bread: </strong>$25</li>
+                    <li><strong>Regular Bread: </strong>$25</li>
+                </ul>
+                <br>
+                <h2>Macaroon</h2>
+                <ul>
+                    <li><strong>Colored Macaroons: </strong>$25</li>
+                    <li><strong>Colored Macaroons: </strong>$25</li>
+                    <li><strong>Colored Macaroons: </strong>$25</li>
+                    <li><strong>Colored Macaroons: </strong>$25</li>
+                </ul>
+                <br>
+                <h2>Cakes</h2>
+                <ul>
+                    <li><strong>Awesome Cake: </strong>$25</li>
+                    <li><strong>Awesome Cake: </strong>$25</li>
+                    <li><strong>Awesome Cake: </strong>$25</li>
+                    <li><strong>Awesome Cake: </strong>$25</li>
+                </ul>
+            </body>
+            ")
+        mail = SendGrid::Mail.new(from, subject, to, content)
+        
+        sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'].to_s)
+        response = sg.client.mail._('send').post(request_body: mail.to_json)
+        puts response.status_code
+        erb(:sent)
+    end
 end
