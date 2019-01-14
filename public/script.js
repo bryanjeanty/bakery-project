@@ -94,3 +94,26 @@ for(let i = 0; i < btn1.length; i++) {
         alert('Sorry this button is currently inactive. Try again later!');
     });
 }
+
+let about_btn = document.querySelector('#about-btn');
+let shop_btn = document.querySelector('#shop-btn');
+
+about_btn.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    window.scrollBy({
+        top: 670,
+        left: 0,
+        behavior: 'smooth'
+    });
+});
+
+shop_btn.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    window.scrollBy({
+        top:1775,
+        left:0,
+        behavior: 'smooth'
+    });
+});
