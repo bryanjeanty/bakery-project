@@ -246,11 +246,11 @@
 }
 
 .test-image-text {
-    width: 35%; /*30%;*/
+    width: 35%;
     margin-right: 175px;
     margin-left: auto;
-    margin-top: 25px; /*50px;*/
-    padding: 30px;/*40px;*/
+    margin-top: 50px;
+    padding: 25px;
     font-size: 1.23em;
     font-weight: bold;
     font-style: italic;
@@ -258,6 +258,27 @@
     color: #EDE3E9;
     border: 1px solid #EDE3E9;
     border-radius: 10px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    border: 1px solid #EDE3E9;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.carousel-control-prev {
+    margin-left: 87vw;
+}
+
+.carousel-control-next {
+    margin-right: 3vw;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: #5E55C7;
 }
 
 /* -------------------------------------------- */
@@ -496,5 +517,5 @@ footer .primary p {
     color: #EDE3E9;
     font-weight: bold;
     font-size: 1.05em;
-    /* padding-top: 10px; */
+    padding-top: 8px;
 }
