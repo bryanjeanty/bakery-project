@@ -515,6 +515,10 @@ html {
     margin-left: auto;
 }
 
+.btn-1, .btn-2:hover {
+    cursor: pointer;
+}
+
 /* -------------------------------------------- */
 
 .news-sect {

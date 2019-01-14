@@ -81,3 +81,16 @@ down_arrow_main.addEventListener('click', (event) => {
         behavior: 'smooth' 
       });
 });
+
+
+let btn1 = document.querySelectorAll('.btn-1');
+let btn2 = document.querySelectorAll('.btn-2');
+
+for(let i = 0; i < btn1.length; i++) {
+    btn1[i].addEventListener('click', (event) => {
+        alert('Sorry this button is currently inactive. Try again later!');
+    });
+    btn2[i].addEventListener('click', (event) => {
+        alert('Sorry this button is currently inactive. Try again later!');
+    });
+}
