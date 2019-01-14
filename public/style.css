@@ -3,15 +3,15 @@
     Sections of Page (and background colors):
     1. Header
         a. Top Banner --> Bright Color (solid) == PURPLE [#5E55C7]
-        b. Hero Image --> Dark Color (overlay) == ARSENIC [#403F4C]
+        b. Hero Image --> None
     2. Main
         a. About Section --> Light Color (solid) == PLATINUM [#EDE3E9]
-        b. Testimonials --> Bright Color (solid) STIL DE GRAIN YELLOW [#F9DC5C]
+        b. Testimonials --> Bright Color (solid) PURPLE [#5E55C7]
         c. Featured Products --> Light Color(solid) == PLATINUM [#EDE3E9]
-        d. Newsletter --> Bright Color (solid) == STIL DE GRAIN YELLOW [#F9DC5C]
+        d. Newsletter --> Bright Color (solid) == PURPLE [#5E55C7]
     3. Footer
         a. Secondary --> Dark Color (overlay) == ARSENIC [#403F4C]
-        b. Primary --> Bright Color (solid) == PURPLE [#5E55C7]
+        b. Primary --> Bright Color (solid) == ARSENIC [#403F4C]
 */
 
 * {
@@ -153,9 +153,8 @@
 .hero .down-arrow-header {
     object-fit: cover;
     border: 1.5px solid #5E55C7;
-    height: 35px; /*25px;*/
-    width: 45px;/*40px;*/
-    /* margin-left: 610px; */
+    height: 35px; 
+    width: 45px;
     padding: 10px;
     border-radius: 10px;
     margin-left: 47.5vw;
@@ -218,7 +217,6 @@
 }
 
 .about-text p {
-    /* border: 1px solid black; */
     font-size: 1.25em;
     margin: 40px;
 }
@@ -232,9 +230,8 @@
 .down-arrow-main {
     object-fit: cover;
     border: 1.5px solid #5E55C7;
-    height: 35px; /*25px;*/
-    width: 45px;/*40px;*/
-    /* margin-left: 610px; */
+    height: 35px;
+    width: 45px;
     padding: 10px;
     border-radius: 10px;
     margin-top: 35px;
@@ -338,10 +335,31 @@
 
 /* -------------------------------------------- */
 
-.prod-sect {
+.cupcake-sect {
     background-color: #EDE3E9;
     height: 100vh;
     overflow: hidden;
+}
+
+.bread-sect {
+    background-color: #EDE3E9;
+    height: 100vh;
+    overflow: hidden;
+    display: none;
+}
+
+.macaroon-sect {
+    background-color: #EDE3E9;
+    height: 100vh;
+    overflow: hidden;
+    display: none;
+}
+
+.cake-sect {
+    background-color: #EDE3E9;
+    height: 100vh;
+    overflow: hidden;
+    display: none;
 }
 
 .prod-title-container {
@@ -373,7 +391,6 @@
     margin-top: 20px;
     border-radius: 5px;
     display: inline-block;
-    /* margin-left: 445px; */
     margin-left: 33.25vw;
     padding: 15px 0;
 }
@@ -399,6 +416,11 @@
 }
 
 .prod-menu a:hover {
+    background-color: white;
+    color: #5E55C7;
+}
+
+.prod-menu .btn-select {
     background-color: white;
     color: #5E55C7;
 }
@@ -429,8 +451,6 @@
 .prod-price {
     border-radius: 50%;
     background-color: white;
-    /* width: 20px; */
-    /* height: 20px; */
     border: 2.25px solid #5E55C7;
     position: absolute;
     margin-left: 95px;
@@ -510,7 +530,6 @@
 .news-sect div {
     margin-right: 110px;
     margin-left: auto;
-    /* border: 1px solid black; */
 }
 
 .news-input {
