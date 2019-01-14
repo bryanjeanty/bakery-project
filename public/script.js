@@ -66,7 +66,7 @@ let down_arrow_head = document.querySelector('#head-down-arrow');
 
 down_arrow_head.addEventListener('click', (event) => {
     window.scrollBy({ 
-        top: 670, // could be negative value
+        top: 670,
         left: 0, 
         behavior: 'smooth' 
       });
@@ -76,7 +76,7 @@ let down_arrow_main = document.querySelector('#main-down-arrow');
 
 down_arrow_main.addEventListener('click', (event) => {
     window.scrollBy({ 
-        top: 670, // could be negative value
+        top: 670,
         left: 0, 
         behavior: 'smooth' 
       });

@@ -555,6 +555,11 @@ html {
     font-size: 1.05em;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+.news-form {
+    cursor: pointer;
 }
 
 /* -------------------------------------------- */
