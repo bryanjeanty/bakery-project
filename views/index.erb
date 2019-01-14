@@ -13,15 +13,16 @@
         <div class="top-banner">
 
             <div class="top-contacts">
-                <a href="#">
+                <div>
                     <img src="images/call.svg" alt="phone icon" width="15px">
                     (631)123-4567
-                </a>
+                </div>
 
-                <a href="#">
+                
                     <img src="images/envelope.svg" alt="mail icon" width="15px">
+                <div>
                     friendly.admin@bakery.com
-                </a>
+                </div>
             </div>
 
             <div class="top-search">
@@ -38,8 +39,45 @@
             <div class="menu-bar">
                 <a href="#">Shop</a>
                 <a href="#">About</a>
-                <a href="#">Contact</a>
-            </div>
+            
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary contact-btn" data-toggle="modal" data-target="#exampleModal">
+                Contact
+                </button>
+<%#%>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <!-- Change made to header below -->
+                            <div style="background-color: #5E55C7; font-weight: bold; color: #EDE3E9" class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Tell Us Why You Love Us!</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <form action="" method="get">
+                                <div class="modal-body">
+                                    <input type="text" name="pre-name" placeholder="First Name...">
+                                    <input type="text" name="post-name" placeholder="Last Name...">
+                                    <input type="text" name="subject" placeholder="Subject...">
+                                    <div class="purpose">
+                                        <div>Choose a Reason:</div>
+                                        <li><input type="radio" name="reason-1" id="">&emsp;You Love Us!</li>
+                                        <li><input type="radio" name="reason-1" id="">&emsp;Complaint</li>
+                                        <li><input type="radio" name="reason-1" id="">&emsp;Other</li>
+                                    </div>
+                                    <textarea name="message" id="" cols="30" rows="10" placeholder="Enter Message..."></textarea>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary close-btn" data-dismiss="modal">Close</button>
+                                    <button type="button" name="send-btn" class="btn btn-primary send-btn">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<%#%%>
             <h1>Be our guest ... 😉</h1>   
             <img class="down-arrow-header" src="images/arrow-down-sign-to-navigate.svg" alt="down arrow icon"> 
         </div>
@@ -201,11 +239,13 @@
         </div>
 
         <div class="news-sect">
-            <h2>Get New Receipes Weekly!</h2>
-            <form action="" method="">
-                <input type="text" name="newsletter" placeholder="Enter Email...">
-                <button>Enter</button>
-            </form>
+            <h2 class="news-head">Get New Receipes Weekly!</h2>
+            <div>
+                <form class="news-form" action="" method="">
+                    <input class="news-input" type="text" name="newsletter" placeholder="Enter Email...">
+                    <button class="news-btn">Enter</button>
+                </form>
+            </div>
         </div>
     </main>
 
