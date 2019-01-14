@@ -411,6 +411,31 @@
     font-size: 1.25em;
 }
 
+.prod-btns {
+    width: 80%; 
+    margin: 22px; 
+    display: flex
+}
+
+.btn-1, .btn-2 {
+    border: none; 
+    color: white; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    padding: 5px;
+    box-shadow: 2px 2px #888888;
+}
+
+.btn-1 {
+    background-color: red; 
+}
+
+.btn-2 {
+    background-color: blue;
+    margin-right: 0; 
+    margin-left: auto;
+}
+
 /* -------------------------------------------- */
 
 .news-sect {
