@@ -20,6 +20,10 @@
     list-style: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
  .top-banner {
     background-color: #5E55C7;
     display: flex;

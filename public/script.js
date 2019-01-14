@@ -61,3 +61,23 @@ for(let i = 0; i < cake_btn.length; i++) {
         cake_sect.style.display = 'block';
     });
 }
+
+let down_arrow_head = document.querySelector('#head-down-arrow');
+
+down_arrow_head.addEventListener('click', (event) => {
+    window.scrollBy({ 
+        top: 670, // could be negative value
+        left: 0, 
+        behavior: 'smooth' 
+      });
+});
+
+let down_arrow_main = document.querySelector('#main-down-arrow');
+
+down_arrow_main.addEventListener('click', (event) => {
+    window.scrollBy({ 
+        top: 670, // could be negative value
+        left: 0, 
+        behavior: 'smooth' 
+      });
+});
