@@ -22,7 +22,7 @@
 
 .top-banner {
     background-color: #5E55C7;
-    padding: 10px;
+    padding: 7px;
     display: flex;
 }
 
@@ -60,6 +60,7 @@
     background: url(images/drew-coffman-1872-unsplash.jpg) center center no-repeat;
     background-size: cover;
     display: inline-block;
+    /* border: 1px solid black; */
 }
 
 .hero img {
@@ -97,11 +98,12 @@
 .hero .down-arrow-header {
     object-fit: cover;
     border: 1.5px solid #5E55C7;
-    height: 25px;
-    width: 40px;
-    margin-left: 610px;
+    height: 35px; /*25px;*/
+    width: 45px;/*40px;*/
+    /* margin-left: 610px; */
     padding: 10px;
     border-radius: 10px;
+    margin-left: 47.5vw;
 }
 
 .hero .down-arrow-header:hover {
@@ -136,7 +138,7 @@
     font-size: 2em;
     width: 180%;
     display: inline-block;
-    margin: 10px 0;
+    margin: 5px 0;
     padding-top: 10px;
     color: #5E55C7;
 }
@@ -161,8 +163,9 @@
 }
 
 .about-text p {
-    font-size: 1.35em;
-    margin: 60px;
+    /* border: 1px solid black; */
+    font-size: 1.25em;
+    margin: 40px;
 }
 
 .about-image {
@@ -174,16 +177,18 @@
 .down-arrow-main {
     object-fit: cover;
     border: 1.5px solid #5E55C7;
-    height: 25px;
-    width: 40px;
-    margin-left: 610px;
+    height: 35px; /*25px;*/
+    width: 45px;/*40px;*/
+    /* margin-left: 610px; */
     padding: 10px;
     border-radius: 10px;
     margin-top: 35px;
+    margin-left: 47.5vw;
 }
 
 .down-arrow-main:hover {
     cursor: pointer;
+    background-color: white;
 }
 
 /* -------------------------------------------- */
@@ -218,9 +223,9 @@
 
 .test-title {
     font-size: 2em;
-    width: 700px;
+    width: 300%;
     display: inline-block;
-    margin: 10px 0;
+    margin: 5px 0;
     padding-top: 10px;
     color: #EDE3E9;
 }
@@ -241,12 +246,12 @@
 }
 
 .test-image-text {
-    width: 30%;
+    width: 35%; /*30%;*/
     margin-right: 175px;
     margin-left: auto;
-    margin-top: 50px;
-    padding: 40px;
-    font-size: 1.3em;
+    margin-top: 25px; /*50px;*/
+    padding: 30px;/*40px;*/
+    font-size: 1.23em;
     font-weight: bold;
     font-style: italic;
     text-align: justify;
@@ -281,9 +286,9 @@
 
 .prod-title {
     font-size: 2em;
-    width: 2000px;
+    width: 600%;
     display: inline-block;
-    margin: 10px 0;
+    margin: 5px 0;
     padding-top: 10px;
     color: #5E55C7;
 }
@@ -292,7 +297,8 @@
     margin-top: 20px;
     border-radius: 5px;
     display: inline-block;
-    margin-left: 445px;
+    /* margin-left: 445px; */
+    margin-left: 33.25vw;
     padding: 15px 0;
 }
 
@@ -347,16 +353,16 @@
 .prod-price {
     border-radius: 50%;
     background-color: white;
-    width: 20px;
-    height: 20px;
+    /* width: 20px; */
+    /* height: 20px; */
     border: 2.25px solid #5E55C7;
     position: absolute;
     margin-left: 95px;
-    margin-top: 244px;
+    margin-top: 250px;
     color: #5E55C7;
     font-weight: bold;
     font-size: 1.15em;
-    padding: 13px 18px 13px 8px;
+    padding: 7px;
 }
 
 .prod-image img {
@@ -381,6 +387,7 @@
 
 .prod-descript h3 {
     margin: 18px 10px 0 10px;
+    font-size: 1.25em;
 }
 
 /* -------------------------------------------- */
@@ -388,13 +395,15 @@
 .news-sect {
     background-color: #5E55C7;
     display: flex;
-    padding: 20px;
+    padding: 15px;
 }
 
 .news-sect h2 {
     color: #EDE3E9;
     margin-left: 112px;
-    margin-top: 5px;
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .news-sect form {
@@ -429,6 +438,7 @@ footer {
     height: 75vh;
     background: url(images/bakery-baking-bread-357628.jpg) center center no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 footer .secondary {
@@ -438,7 +448,6 @@ footer .secondary {
 }
 
 footer .secondary .footer-container {
-    /* border: 1px solid black; */
     height: 75%;
     width: 85%;
     margin: auto;
@@ -446,13 +455,12 @@ footer .secondary .footer-container {
 }
 
 footer .secondary .footer-contents {
-    /* border: 1px solid black; */
     width: 25%;
     height: 100%;
     margin: auto;
     color: #EDE3E9;
     font-weight: bold;
-    font-size: 1.05em;
+    font-size: 1em;
 }
 
 .footer-contents h3 {
@@ -488,5 +496,5 @@ footer .primary p {
     color: #EDE3E9;
     font-weight: bold;
     font-size: 1.05em;
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
