@@ -96,6 +96,33 @@
     border-radius: 2px;
 }
 
+#my-modal {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+#contact-form-head {
+    background-color: #5E55C7; 
+    font-weight: bolder;
+    color: #EDE3E9;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#email-id, #subject-id {
+    border: 1.25px solid #5E55C7;
+    padding: 10px;
+    border-radius: 10px;
+    width: 55%;
+}
+
+#message-id {
+    border: 1.25px solid #5E55C7;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
 .modal-footer .send-btn {
     background-color: #5E55C7;
     border: none;
